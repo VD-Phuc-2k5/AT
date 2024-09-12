@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 50px;
+  overflow-x: hidden;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.container {
+  position: relative;
+}
+
+#startNodeInput,
+#goalNodeInput {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  text-align: center;
+}
+
+#goalNodeInput {
+  left: 180px;
+}
+
+#run,
+#clear {
+  position: absolute;
+  bottom: -30px;
+}
+
+#run {
+  left: 0;
+}
+
+#clear {
+  left: 50px;
+}
+
+.heading {
+  text-align: center;
+  padding: 20px 160px 20px 0;
+  text-wrap: nowrap;
+}
+
+.heading div {
+  font-size: 30px;
+}
+
+h3 {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#stepDisplay-item {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#stepDisplay-item strong {
+  display: block;
+  flex: 1;
+  text-align: center;
+}
+
+#costDisplay {
+  margin-top: 20px;
+}

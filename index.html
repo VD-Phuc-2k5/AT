@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A* Pathfinding Visualization</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="heading">
+        <h1>AT - Algorithm for tree</h1>
+        <div id="costDisplay">Total Cost: 0</div>
+      </div>
+
+      <div class="container">
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <input
+          type="text"
+          id="startNodeInput"
+          placeholder="Stat Node"
+          autocomplete="false" />
+        <input
+          type="text"
+          id="goalNodeInput"
+          placeholder="Goal Node"
+          autocomplete="false" />
+        <button id="run">Run</button>
+        <button id="clear">Clear</button>
+      </div>
+    </div>
+
+    <h3>Algorithm Steps</h3>
+    <div id="stepDisplay"></div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
